@@ -1,0 +1,18 @@
+﻿@page "/counter"
+@rendermode InteractiveServer
+@using System
+@using static SharpinoCounter.SharpinoCounterApi;
+@using static SharpinoCounter.Counter;
+@namespace ASP.Components.Pages
+
+<PageTitle>Counter</PageTitle>
+
+<h1>Counter</h1>
+
+<p role="status">Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+
+
+
